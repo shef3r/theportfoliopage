@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Kalnia&display=swap');
+
+:root {
+    --foreground: rgb(240, 240, 240);
+}
+
+body {
+    background-color: black;
+    color: var(--foreground);
+    margin:0;
+    padding: 0;
+    height: 10000px;
+    font-family: 'Chivo Mono', monospace;
+}   
+
+::-webkit-scrollbar-thumb {
+    background: rgba(100,100,100,.4);
+}
+
+::-webkit-scrollbar {
+    background-color: black;
+}
+
+:visited, :link { color: var(--foreground); text-decoration: none; }
+
+#topbar {
+    background: linear-gradient(rgba(0,0,0,.4), transparent);
+    height: 60px;
+    width: 100vw;
+    overflow: hidden;
+    position: fixed;
+    top:0;
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+@keyframes biggerlink {
+    0% { font-size: 100%; }
+    100% { font-size: 120%; }
+}
+
+@keyframes smallerlink {
+    0% { font-size: 120%; }
+    100% { font-size: 100%; }
+}
+
+#info {
+    height: 50vh;
+    width: 100vw;
+    background-color: #282828;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+#leftinfo>* {
+    margin: 0;
+    margin-right: 150px;
+    padding: 4px;
+}
