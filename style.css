@@ -86,6 +86,7 @@ nav {
     font-size: 20px;
     margin-right: 100px;
     word-wrap: normal;
+    width: 100%;
 }
 
 #projects, #experience {
