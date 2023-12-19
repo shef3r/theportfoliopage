@@ -68,7 +68,6 @@ nav {
 }
 
 #info {
-    height: 200px;
     background-color: #282828;
     padding-top: 80px;
     padding-bottom: 60px;
@@ -85,7 +84,7 @@ nav {
 
 #rightinfo {
     font-size: 20px;
-    max-width: 50%;
+    margin-right: 100px;
     word-wrap: normal;
 }
 
@@ -130,4 +129,27 @@ nav {
 #ambielink {
     font-weight: bold;
     color: #ED9515;
+}
+
+@media screen and ( max-width: 750px ) {
+    #info {
+        flex-direction: column;
+    } 
+    #projects, #experience, #info {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    img {
+        display: none;
+    }
+    #topbar {
+        justify-content: center;
+    }
+}
+
+#socials {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
