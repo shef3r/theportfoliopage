@@ -4,12 +4,31 @@
     --foreground: rgb(240, 240, 240);
 }
 
+@keyframes biggerlink {
+    0% { font-size: 100%; }
+    100% { font-size: 120%; }
+}
+
+@keyframes smallerlink {
+    0% { font-size: 120%; }
+    100% { font-size: 100%; }
+}
+
+@keyframes bold {
+    0% { font-weight: 400; }
+    100% { font-weight: 600; }
+}
+
+@keyframes nobold {
+    0% { font-weight: 600; }
+    100% { font-weight: 400; }
+}
+
 body {
     background-color: black;
     color: var(--foreground);
     margin:0;
     padding: 0;
-    height: 10000px;
     font-family: 'Chivo Mono', monospace;
 }   
 
@@ -17,7 +36,7 @@ body {
     background: rgba(100,100,100,.4);
 }
 
-::-webkit-scrollbar {
+::-webkit-scrollbar, ::-webkit-scrollbar-corner {
     background-color: black;
 }
 
@@ -26,7 +45,7 @@ body {
 #topbar {
     background: linear-gradient(rgba(0,0,0,.4), transparent);
     height: 60px;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     position: fixed;
     top:0;
@@ -48,24 +67,12 @@ nav {
     column-gap: 20px;
 }
 
-@keyframes biggerlink {
-    0% { font-size: 100%; }
-    100% { font-size: 120%; }
-}
-
-@keyframes smallerlink {
-    0% { font-size: 120%; }
-    100% { font-size: 100%; }
-}
-
 #info {
-    height: 50vh;
-    width: 100vw;
+    height: 200px;
     background-color: #282828;
     padding-top: 80px;
     padding-bottom: 60px;
     padding-left: 100px;
-    padding-right: 100px;
     display: flex;
     flex-direction: row;
 }
@@ -74,4 +81,53 @@ nav {
     margin: 0;
     margin-right: 150px;
     padding: 4px;
+}
+
+#rightinfo {
+    font-size: 20px;
+    max-width: 50%;
+    word-wrap: normal;
+}
+
+#projects, #experience {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#path {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#projectscroller {
+    overflow: scroll;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+#projframe {
+    height: 270px;
+    width: 220px;
+    border: 1px var(--foreground) solid;
+    padding: 15px;
+}
+
+#projframe>b {
+    font-size: 25px;
+    font-family: 'Kalnia', serif;
+}
+
+#projframe>p {
+    word-wrap: break-word;
+}
+
+#ambielink {
+    font-weight: bold;
+    color: #ED9515;
 }
