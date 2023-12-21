@@ -33,8 +33,9 @@ html { scroll-behavior: smooth; }
 body {
     background-color: black;
     color: var(--foreground);
-    margin:0;
+    margin: 0;
     padding: 0;
+    padding-bottom: 80px;
     font-family: 'Chivo Mono', monospace;
 }   
 
@@ -89,7 +90,6 @@ nav {
     display: flex;
     flex-direction: column;
     padding-top: 80px;
-    padding-bottom: 80px;
     padding-left: 100px;
     padding-right: 100px;
 }
