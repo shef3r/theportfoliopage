@@ -152,7 +152,7 @@ nav {
     margin-bottom: 30px;
 }
 
-.projframe>b {
+.projframe>a>b {
     font-size: 25px;
     font-family: 'Kalnia', serif;
 }
