@@ -61,6 +61,10 @@ body {
     font-family: 'Chivo Mono', monospace;
 }   
 
+html {
+    scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar-thumb {
     background: rgba(100,100,100,.4);
 }
@@ -133,16 +137,16 @@ nav {
 }
 
 #projectscroller {
-    overflow: scroll;
     width: 100%;
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    flex-wrap: wrap;
+    column-gap: 30px;
 }
 
 .projframe {
-    height: 270px;
-    width: 220px;
+    height: 110px;
+    width: 300px;
     border: 1px var(--foreground) solid;
     padding: 15px;
     margin-bottom: 30px;
@@ -154,7 +158,8 @@ nav {
 }
 
 .projframe>p {
-    word-wrap: break-word;
+    word-wrap: normal;
+    width: 270px;
 }
 
 #ambielink {
