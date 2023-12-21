@@ -13,42 +13,42 @@
     <header id="topbar">
         <img src="logo.svg" width="30px">
         <nav>
-            <a onmouseout="goback(this)" onmouseenter="goin(this)" href="#info">information</a>
-            <a onmouseout="goback(this)" onmouseenter="goin(this)" href="#projects">projects</a>
-            <a onmouseout="goback(this)" onmouseenter="goin(this)" href="#experience">experience</a>
+            <a onmouseout="goback(this)" onmouseover="goin(this)" href="#info">information</a>
+            <a onmouseout="goback(this)" onmouseover="goin(this)" href="#projects">projects</a>
+            <a onmouseout="goback(this)" onmouseover="goin(this)" href="#experience">experience</a>
         </nav>
     </header>
     <section id="info">
         <section id="leftinfo">
             <p style="font-size: 40px; font-family: 'Kalnia', serif;"><i>Hi,</i></p>
-            <p style="font-size: 50px;">I'm <i><b>Bruno.</b></i></p>
+            <p style="font-size: 50px;">I'm <i><b onmouseover="bloom(this)" onmouseout="nobloom(this)">Bruno.</b></i></p>
             <p style="font-size: 20px;">but you can call me shfr.</p>
         </section>
         <section id="rightinfo">
-            <p>he/him, 15. A still-beginner developer. Trying whatever gets into my hands and trying to make it pretty along the way. The thought of being able to do anything with your code is kind of scary, right?</p>
+            <p><b>he/him, 15.</b> A still-beginner developer. Trying whatever gets into my hands and trying to make it pretty along the way. The thought of being able to do anything with your code is kind of scary, right?</p>
             <nav id="socials">
-                <a onmouseout="gonobold(this)" onmouseenter="gobold(this)" href="https://github.com/shef3r">github</a>
-                <a onmouseout="gonobold(this)" onmouseenter="gobold(this)" href="https://twitter.com/lidlomiks">twitter</a>
+                <a onmouseout="nobloom(this)" onmouseover="bloom(this)" href="https://github.com/shef3r">github</a>
+                <a onmouseout="nobloom(this)" onmouseover="bloom(this)" href="https://twitter.com/lidlomiks">twitter</a>
             </nav>
         </section>
     </section>
     <section id="projects">
         <b id="path">~/github/projects</b>
         <div id="projectscroller">
-            <div id="projframe">
-                <b>translate</b>
+            <div class="projframe" onmouseover="round(this)" onmouseout="unround(this)">
+                <b onmouseout="nobloom(this)" onmouseover="bloom(this)">translate</b>
                 <p>ewjirewojitreijogreijogrejiogjieroge</p>
             </div>
-            <div id="projframe">
-                <b>translate</b>
+            <div class="projframe" onmouseover="round(this)" onmouseout="unround(this)">
+                <b onmouseout="nobloom(this)" onmouseover="bloom(this)">translate</b>
                 <p>ewjirewojitreijogreijogrejiogjieroge</p>
             </div>
-            <div id="projframe">
-                <b>translate</b>
+            <div class="projframe" onmouseover="round(this)" onmouseout="unround(this)">
+                <b onmouseout="nobloom(this)" onmouseover="bloom(this)">translate</b>
                 <p>ewjirewojitreijogreijogrejiogjieroge</p>
             </div>
-            <div id="projframe">
-                <b>translate</b>
+            <div class="projframe" onmouseover="round(this)" onmouseout="unround(this)">
+                <b onmouseout="nobloom(this)" onmouseover="bloom(this)">translate</b>
                 <p>ewjirewojitreijogreijogrejiogjieroge</p>
             </div>
         </div>
@@ -58,6 +58,8 @@
         <ul>
             <li>Contributed to a popular Windows application <a id="ambielink" href="https://github.com/jeniusapps/ambie">Ambie</a> by implementing sound shuffling</li>
             <li>Creating Windows apps and websites since 2021</li>
+            <li>Working with .NET, Svelte, Vite, HTML/CSS/JS since 2020</li>
+            <i style="font-size: 12px;">By the way, I only used raw HTML/CSS/JS out of spite. I don't usually do this</i>
         </ul>
     </section>
 </body>

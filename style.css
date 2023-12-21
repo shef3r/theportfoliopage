@@ -2,6 +2,7 @@
 
 :root {
     --foreground: rgb(240, 240, 240);
+    --foregrounddark: rgb(200, 200, 200);
 }
 
 @keyframes biggerlink {
@@ -22,6 +23,34 @@
 @keyframes nobold {
     0% { font-weight: 600; }
     100% { font-weight: 400; }
+}
+
+@keyframes round {
+    0% { border-radius: 0px; }
+    100% { border-radius: 20px; }
+}
+
+@keyframes noround {
+    0% { border-radius: 20px; }
+    100% { border-radius: 0px; }
+}
+
+@keyframes bloom {
+    0% {
+        text-shadow: 0px 0px 0px var(--foregrounddark);
+     }
+    100% { 
+        text-shadow: 0px 0px 20px var(--foregrounddark);
+     }
+}
+
+@keyframes nobloom {
+    0% {
+        text-shadow: 0px 0px 20px var(--foregrounddark);
+     }
+    100% { 
+        text-shadow: 0px 0px 00px var(--foregrounddark);
+    }
 }
 
 body {
@@ -111,19 +140,20 @@ nav {
     gap: 30px;
 }
 
-#projframe {
+.projframe {
     height: 270px;
     width: 220px;
     border: 1px var(--foreground) solid;
     padding: 15px;
+    margin-bottom: 30px;
 }
 
-#projframe>b {
+.projframe>b {
     font-size: 25px;
     font-family: 'Kalnia', serif;
 }
 
-#projframe>p {
+.projframe>p {
     word-wrap: break-word;
 }
 
@@ -154,3 +184,4 @@ nav {
     align-items: center;
     justify-content: center;
 }
+
